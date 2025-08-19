@@ -14,9 +14,11 @@ namespace webPokemonAPI.Entities
         //1 - * o * - 1
         public ICollection<Review> Reviews { get; set; }
 
-        // public ICollection<Owner> Owners { get; set; }
+
+// * - * , se crean tablas pivots tambien
+        public ICollection<PokemonOwner> PokemonOwners { get; set; }
         
-        // public ICollection<Category> Categories{ get; set; }
+        public ICollection<PokemonCategory> PokemonCategories { get; set; }
     
     }
 

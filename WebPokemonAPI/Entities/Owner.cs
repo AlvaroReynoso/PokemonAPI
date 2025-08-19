@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace webPokemonAPI.Entities;
 
 public class Owner
@@ -13,6 +15,8 @@ public class Owner
     // 1 - 1 
     public Country Country { get; set; }
 
+    // * - * 
+    public ICollection<PokemonOwner> PokemonOwners { get; set; }
 
 }
 
